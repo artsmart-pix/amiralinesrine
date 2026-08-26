@@ -590,6 +590,17 @@
     display:block;
     background:#111;
   }
+  .video-mask{
+    position:absolute;
+    bottom:8px;
+    left:8px;
+    right:8px;
+    height:80px;
+    background:linear-gradient(180deg, transparent 0%, rgba(0,0,0,.6) 40%, rgba(0,0,0,.9) 100%);
+    border-radius:0 0 20px 20px;
+    pointer-events:none;
+    z-index:2;
+  }
   .video-caption{
     font-family:'Great Vibes', cursive;
     color:var(--gold-deep);
@@ -1319,6 +1330,7 @@
       <video playsinline muted loop autoplay poster="assets/poster-rings.jpg">
         <source src="Amir%20%26%20Nesrine%20-%20Invitation%20Mariage%20(1).mp4" type="video/mp4">
       </video>
+      <div class="video-mask"></div>
     </div>
     <p class="video-caption reveal d3">Un souvenir pour toujours</p>
   </section>
